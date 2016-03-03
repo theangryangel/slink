@@ -22,7 +22,7 @@ module Slink
       if @definition.options[:trailing_blank_line]
         @builder << ""
       end
-      @builder.join("")
+      @builder.join(@definition.options[:new_line] || "\n")
     end
 
   end
