@@ -51,6 +51,7 @@ module Slink
     end
 
     def parse(line)
+      line.chomp!
       if @options[:quote_char] == ''
         line_data = line.split(@options[:separator])
       else
